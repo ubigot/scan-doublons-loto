@@ -8,29 +8,42 @@
 </head>
 <body>
 <header class="app-header">
-<h1>📦 Scan Doublons</h1>
-<div class="sub">Android • Offline • 1 scan = 1 code</div>
+  <h1>📦 Scan Doublons</h1>
+  <div class="sub">Android • Offline • 1 scan = 1 code</div>
 </header>
 
 <main class="container">
-<section class="status">
-<div id="messageBox" class="message neutral">Prêt. Appuie sur <b>📷 Scanner</b>.</div>
-<div class="stats">
-<div class="stat"><div class="label">Scannés</div><div id="count" class="value">0</div></div>
-<div class="stat"><div class="label">Dernier code</div><div id="lastCode" class="value small">—</div></div>
-</div>
-<div class="actions">
-<button id="startBtn" class="btn primary">📷 Scanner un code-barres</button>
-<button id="stopBtn" class="btn" disabled>⏹️ Stop</button>
-<button id="resetBtn" class="btn danger">🗑️ Réinitialiser</button>
-</div>
-</section>
+  <section class="status">
+    <div id="messageBox" class="message neutral">Prêt. Appuie sur <b>📷 Scanner</b>.</div>
 
-<section class="scanner">
-<div id="readerWrap" class="reader-wrap hidden">
-<video id="video" class="video" playsinline></video>
-</div>
-</section>
+    <div class="stats">
+      <div class="stat">
+        <div class="label">Scannés</div>
+        <div id="count" class="value">0</div>
+      </div>
+      <div class="stat">
+        <div class="label">Dernier code</div>
+        <div id="lastCode" class="value small">—</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="startBtn" class="btn primary">📷 Scanner un code-barres</button>
+      <button id="stopBtn" class="btn" disabled>⏹️ Stop</button>
+      <button id="resetBtn" class="btn danger">🗑️ Réinitialiser</button>
+    </div>
+  </section>
+
+  <section class="scanner">
+    <div id="readerWrap" class="reader-wrap hidden">
+      <video id="video" class="video" playsinline></video>
+    </div>
+
+    <div class="recent">
+      <div class="recent-title">🕘 Derniers scans</div>
+      <ul id="recentList" class="recent-list"></ul>
+    </div>
+  </section>
 </main>
 
 <script src="app.js"></script>
