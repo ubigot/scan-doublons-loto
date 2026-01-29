@@ -1,0 +1,1 @@
+Scan doublons loto – version offline finale

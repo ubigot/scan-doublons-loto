@@ -1,0 +1,11 @@
+body{margin:0;font-family:system-ui;background:#0b1220;color:#fff}
+.app-header{padding:12px;border-bottom:1px solid #333}
+.container{padding:16px}
+.btn{padding:14px;border-radius:12px;font-weight:700}
+.primary{background:#2563eb;color:#fff}
+.danger{background:#dc2626;color:#fff}
+.message{padding:14px;margin-bottom:12px}
+.neutral{background:#334155}
+.ok{background:#16a34a}
+.warn{background:#dc2626}
+.hidden{display:none}
